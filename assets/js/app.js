@@ -8,7 +8,8 @@
     messagingSenderId: "830034718108"
   };
   firebase.initializeApp(config);
-
+  console.log(firebase);
+  
 
   //variable to store database name
   var database = firebase.database();
