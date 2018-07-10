@@ -9,7 +9,7 @@
 	<!-- Bootstrap-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <!--css stylesheet-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <!--moment js-->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- jQuery -->
@@ -67,7 +67,7 @@
 			</div>
 			
 			<div class="panel-body">
-				<form>
+				<form id="createTrain">
                 	<div class="form-group">
                   		<label for="name">Train Name</label>
                   		<input class="form-control" id="name" type="text">
@@ -88,13 +88,13 @@
                   		<input class="form-control" id="frequency" type="number" min=0 onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                		 </div>    
                
-               		 <button class="btn btn-info" id="submit-btn" type="submit">Submit</button>
-               		 <button class="btn btn-info" id="update-btn" type="submit">Update</button>
-               		 <button class="btn btn-info" id="close-btn" type="submit">Close</button>
+               		 <input class="btn btn-info" id="submit-btn" type="submit" value="Submit">
+               		 <button class="btn btn-info" id="update-btn">Update</button>
+               		 <button class="btn btn-info" id="close-btn">Close</button>
               </form>
 			</div>
 		</div><!-- END .panel -->
 	</div><!-- END .container -->
-<script src="assets/javascript/app.js"></script>
+<script src="./assets/js/app.js"></script>
 </body>
 </html>

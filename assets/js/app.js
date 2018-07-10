@@ -1,5 +1,5 @@
  // Initialize Firebase
- var config = {
+ /*var config = {
     apiKey: "AIzaSyCHhPcgO2vQokI5MleoyEWVWYWU-1pyAJ8",
     authDomain: "train-schedule-303f6.firebaseapp.com",
     databaseURL: "https://train-schedule-303f6.firebaseio.com",
@@ -25,4 +25,9 @@
   var destination;
   var time;
   var frequency;
+*/
+  $("#createTrain").on('submit', function(event){
+    event.preventDefault();
+    console.log($(this).serialize())
+  })
  
