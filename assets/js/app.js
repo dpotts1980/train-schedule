@@ -59,5 +59,18 @@
     $("#destination").val("");
     $("#time").val("");
     $("#frequency").val("");
-  })
+  });
+
+  //create firebase event for adding trains//
+  database.ref().on("child_added", function(childSnapshot, prevChildKey) {
+    console.log(childSnapshot.val());
+
+  //storing inputs into varables//
+  var trainByName = childSnapshot.val().name;
+  var trainByDestination = childSnapshot.val().destination;
+  var trainByTime = childSnapshot.val().time;
+  var trainByFrequency = childSnapshot.val().frequency;
+    
+  }
+
  
