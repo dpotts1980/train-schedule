@@ -14,6 +14,8 @@
   //variable to store database name
   var database = firebase.database();
  
+  
+ 
   //Object to store entire firebase database as JSON object 
   var firebaseDataObject = null;
  
@@ -47,11 +49,15 @@
     database.ref().push(trainInputs);
 
     //test if it's working
-    console.log(trainInputs.name);
+    console.log('test', trainInputs.name);
     console.log(trainInputs.destination);
     console.log(trainInputs.time);
     console.log(trainInputs.frequency);
     
-    
+    //Clears all the input boxes
+    $("#name").val("");
+    $("#destination").val("");
+    $("#time").val("");
+    $("#frequency").val("");
   })
  
