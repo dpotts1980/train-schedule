@@ -35,6 +35,23 @@
     time = $('#time').val().trim();
     frequency = $('#frequency').val().trim();
     
+    //need to create an object for holding train info
+    var trainInputs = {
+      name: name,
+      destination: destination,
+      time: time,
+      frequency: frequency
+    }
+
+    //need to push data from inputs to the database
+    database.ref().push(trainInputs);
+
+    //test if it's working
+    console.log(trainInputs.name);
+    console.log(trainInputs.destination);
+    console.log(trainInputs.time);
+    console.log(trainInputs.frequency);
+    
     
   })
  
