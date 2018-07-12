@@ -76,7 +76,16 @@
   console.log(trainByDestination);
   console.log(trainByTime);
   console.log(trainByFrequency);
-  
+  //this is where i started messing with the moment//
+
+  var howOftenTrainArrives = 20;
+
+  //time is 09:00 AM
+  var timeOfFirstTrain = "09:00";
+
+  //time is subtracted from minutes//
+  var timeOfFirstTrainConverted = moment(timeOfFirstTrain, "HH:mm").subtract(5,"minutes");
+  console.log(timeOfFirstTrainConverted);
   
   
   
