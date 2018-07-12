@@ -96,7 +96,18 @@
   var timeBetweenTrains = moment().diff(moment(timeOfFirstTrainConverted), "minutes");
   console.log("Difference in Time: " + timeBetweenTrains);
   
-    
+  //calculaing the remainder
+  var timeRemaining = timeBetweenTrains % howOftenTrainArrives;
+  console.log(timeRemaining);
+
+  //minutes until the next train arrives//
+  var theMinutesTilNextTrain = howOftenTrainArrives - timeRemaining;
+  console.log("The next train will arrive in " + theMinutesTilNextTrain + " minutes!");
+
+  //the next train arrives//
+  var nextTrain = moment().add(theMinutesTilNextTrain, "minutes");
+  console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+  
   });
 
  
