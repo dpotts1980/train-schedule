@@ -87,7 +87,14 @@
   var timeOfFirstTrainConverted = moment(timeOfFirstTrain, "HH:mm").subtract(5,"minutes");
   console.log(timeOfFirstTrainConverted);
   
+  //current time//
+  var currentTime = moment();
+  console.log("The Time is " + moment(currentTime).format('hh:mm'));
   
+
+  //Calculation the Difference between times//
+  var timeBetweenTrains = moment().diff(moment(timeOfFirstTrainConverted), "minutes");
+  console.log("Difference in Time: " + timeBetweenTrains);
   
     
   });
