@@ -8,7 +8,7 @@
     messagingSenderId: "830034718108"
   };
   firebase.initializeApp(config);
-  console.log(firebase);
+  
   
 
   //variable to store database name
@@ -48,11 +48,11 @@
     //need to push data from inputs to the database
     database.ref().push(trainInputs);
 
-    //test if it's working
+    /*test if it's working
     console.log('test', trainInputs.name);
     console.log(trainInputs.destination);
     console.log(trainInputs.time);
-    console.log(trainInputs.frequency);
+    console.log(trainInputs.frequency);*/
     
     //Clears all the input boxes
     $("#name").val("");
@@ -63,14 +63,24 @@
 
   //create firebase event for adding trains//
   database.ref().on("child_added", function(childSnapshot, prevChildKey) {
-    console.log(childSnapshot.val());
+    //console.log(childSnapshot.val());
 
   //storing inputs into varables//
   var trainByName = childSnapshot.val().name;
   var trainByDestination = childSnapshot.val().destination;
   var trainByTime = childSnapshot.val().time;
   var trainByFrequency = childSnapshot.val().frequency;
+
+  //checking to see if i'm getting values on the snapshot//
+  console.log(trainByName);
+  console.log(trainByDestination);
+  console.log(trainByTime);
+  console.log(trainByFrequency);
+  
+  
+  
+  
     
-  }
+  });
 
  
