@@ -117,6 +117,10 @@
         if(infoFromForm === "") {
           return false
         }
+      trainInputs.push(infoFromForm);
+      var trainTimes = $('<tr>').text(infoFromForm)
+      console.log(trainTimes);
+      
 
     });
 
