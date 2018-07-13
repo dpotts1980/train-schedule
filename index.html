@@ -24,14 +24,14 @@
 <body>
 	<div class="container">
 		
-		<div class="jumbotron text-center" id="jumbo">
+		<div class="jumbotron text-center">
 			<h1>Train Schedule</h1>
-			<h2 id="current-time"></h2>
+			
 		</div><!--END .jumbotron -->
 		
-		<div class="panel panel-info" id="schedule-panel">
+		<div class="panel panel-intel" id="schedule-panel">
 			<div class="panel-heading">
-				<h1 class="panel-title">Current Train Schedule</h1>
+				<h1 class="panel-role">Current Train Schedule</h1>
 			</div>
 			<div class="panel-body">
 				<!-- .table-striped alternates table row colors -->
@@ -53,14 +53,14 @@
 				
 				<div class="text-center">
   				 
-  				 	<button class="btn btn-info" id="add-train-btn" type="submit">Add Train</button>
+  				 	
 				</div>
 				
 			</div>
 		</div><!-- END .panel -->
 		
 		
-		<div class="panel panel-info" id="add-panel">
+		<div class="panel panel-intel" id="add-panel">
 			
 			<div class="panel-heading">
 				<h1 class="panel-title" id="add-title">Add Train</h1>
@@ -79,7 +79,7 @@
                 	</div>
                  
                 	 <div class="form-group">
-		                <label for="time">First Train Time (hh:mm militay time)</label>
+		                <label for="time">First Train Time</label>
 		            	<input class="form-control" id="time" type="text">
                 	</div>  
                  
@@ -88,9 +88,9 @@
                   		<input class="form-control" id="frequency" type="number" min=0 onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                		 </div>    
                
-               		 <input class="btn btn-info" id="submit-btn" type="submit" value="Submit">
-               		 <button class="btn btn-info" id="update-btn">Update</button>
-               		 <button class="btn btn-info" id="close-btn">Close</button>
+               		 <input class="btn btn-primary" id="submit-btn" type="submit" value="Submit">
+               		 <button class="btn btn-primary" id="update-btn">Update</button>
+               		 <button class="btn btn-primary" id="close-btn">Close</button>
               </form>
 			</div>
 		</div><!-- END .panel -->

@@ -118,7 +118,7 @@
           return false
         }
       trainInputs.push(infoFromForm);
-      var trainTimes = $('<tr>').text(infoFromForm)
+      var trainTimes = $('<table>').text(infoFromForm)
       console.log(trainTimes);
       
 
