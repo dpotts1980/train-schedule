@@ -109,5 +109,17 @@
   console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
   
   });
+  //adding new schedule of the data we get from firebase//
+  function createSchedule() {
+    $('#schedule').on('click', function(event) {
+      event.preventDefault();
+      var infoFromForm = $('#createTrain').val().trim();
+        if(infoFromForm === "") {
+          return false
+        }
+
+    });
+
+  }
 
  
