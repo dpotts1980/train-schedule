@@ -108,14 +108,9 @@
   var nextTrain = moment().add(theMinutesTilNextTrain, "minutes");
   console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
   //adding new schedule of the data we get from firebase//
-  
-      var infoFromForm = $('#createTrain').val().trim();
-        if(infoFromForm === "") {
-          return false
-        }
-      trainInputs.push(infoFromForm);
-      var trainTimes = $('<table>').text(infoFromForm)
-      console.log(trainTimes);
+  $("#train-table").append("<tr><td>" + trainByName + "</td><td>"
++ trainByDestination + "</td><td>" + trainByFrequency + "</td><td>" + trainByTime + "</td></tr>");
+
       
 
 
